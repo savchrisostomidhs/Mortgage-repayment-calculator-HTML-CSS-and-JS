@@ -1,0 +1,340 @@
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url(./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: "Plus Jakarta Sans";
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/* Form */
+
+.container .form {
+    padding: 23px;
+    width: 100%;
+}
+
+.container .form h1 {
+    color: hsl(202, 55%, 16%);
+    font-size: 28px;
+}
+
+.container .form h1+button {
+    background: none;
+    border: none;
+    color: hsl(200, 24%, 40%);
+    cursor: pointer;
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.container .form h1+button:hover {
+    color: hsl(202, 55%, 16%);
+}
+
+/* Input Global*/
+
+.container .form .inp {
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.container .form .input {
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid hsla(200, 24%, 40%, 0.8);
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.container .form .input-text {
+    background: none;
+    border: none;
+    font-family: "Plus Jakarta Sans";
+    font-weight: bold;
+    height: 100%;
+    outline: none;
+    padding: 15px;
+    width: 100%;
+}
+
+.container .form .text-inp {
+    align-items: center;
+    background-color: hsl(202, 86%, 94%);
+    color: hsl(200, 26%, 54%);
+    display: flex;
+    font-weight: bold;
+    height: 100%;
+    justify-content: center;
+}
+
+/* End Input Global*/
+
+.container .form .amount div p {
+    border-radius: 5px 0 0 5px;
+    min-width: 42px;
+}
+
+.container .form .term div p {
+    border-radius: 0 5px 5px 0;
+    min-width: 80px;
+}
+
+.container .form .interest-rate div p {
+    border-radius: 0 5px 5px 0;
+    min-width: 50px;
+}
+
+/* Radio Input */
+
+.container .form .type {
+    margin-top: 30px;
+}
+
+.container .form .type .options {
+    margin-top: 2px;
+}
+
+.container .form .type .options .opt {
+    border-radius: 5px;
+    border: 1px solid hsl(200, 26%, 54%);
+    height: 50px;
+    margin-top: 10px;
+    padding: 14px 18px;
+    width: 100%;
+}
+
+.container .form .type .options input {
+    accent-color: hsl(61, 70%, 52%);
+}
+
+.container .form .type .options .opt label {
+    font-weight: bold;
+    margin-left: 14px;
+}
+
+/* End Radio Input */
+
+.container .form .required {
+    color: hsl(4, 69%, 50%);
+    display: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.container .form button.submit {
+    align-items: center;
+    background-color: hsl(61, 70%, 52%);
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    font-family: "Plus Jakarta Sans";
+    font-weight: bold;
+    height: 55px;
+    justify-content: center;
+    margin-top: 23px;
+    width: 100%;
+}
+
+.container .form button.submit:hover {
+    background-color: hsla(61, 70%, 52%, 0.6);
+}
+
+.container .form button.submit img {
+    margin-right: 16px;
+}
+
+/* End Form */
+
+/* Empty Results */
+
+.container .empty {
+    align-items: center;
+    background-color: hsl(202, 55%, 16%);
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+
+.container .empty .image {
+    margin-top: 34px;
+}
+
+.container .empty .image img {
+    height: 192px;
+    width: 192px;
+}
+
+.container .empty h2 {
+    margin-top: 14px;
+}
+
+.container .empty p {
+    color: hsla(202, 86%, 94%, 0.6);
+    line-height: 24px;
+    margin-top: 22px;
+}
+
+/* End Empty Results */
+
+/* Completed Results */
+
+.container .complete {
+    align-items: center;
+    background-color: hsla(202, 55%, 16%, 0.95);
+    color: hsla(202, 86%, 94%, 0.6);
+    display: none;
+    flex-direction: column;
+    height: 100%;
+    padding: 32px 24px;
+    width: 100%;
+}
+
+.container .complete h2 {
+    align-self: flex-start;
+    color: hsl(0, 0%, 100%);
+}
+
+.container .complete>p {
+    line-height: 24px;
+    margin-top: 26px;
+}
+
+.container .complete .results p:nth-child(2) {
+    border-bottom: 1px solid hsla(202, 86%, 94%, 0.6);
+    color: hsl(61, 70%, 52%);
+    font-size: 46px;
+    font-weight: bold;
+    margin-top: 16px;
+    padding-bottom: 18px;
+}
+
+.container .complete .results p:nth-child(3) {
+    margin-top: 23px;
+}
+
+.container .complete .results p:nth-child(4) {
+    color: hsl(0, 0%, 100%);
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+.container .complete .results {
+    background-color: hsl(202, 55%, 16%);
+    border-radius: 15px;
+    border-top: 5px solid hsl(61, 70%, 52%);
+    height: 100%;
+    margin-top: 25px;
+    padding: 25px 15px;
+    width: 100%;
+}
+
+/* End Completed Results */
+
+.attribution {
+    display: none;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 500px) {
+    body {
+        align-items: center;
+        background-color: hsl(202, 86%, 94%);
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .container {
+        background-color: white;
+        border-radius: 20px;
+        flex-direction: row;
+        max-height: 605px;
+        max-width: 1010px;
+    }
+
+    .flex {
+        display: flex;
+        gap: 20px;
+    }
+
+    .container .form {
+        padding: 40px;
+    }
+
+    .container .form button.submit {
+        font-size: 1.2rem;
+        padding: 5px;
+        width: 70%;
+    }
+
+    .top {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container .empty {
+        border-radius: 0 20px 20px 80px;
+        justify-content: center;
+        padding: 40px;
+    }
+
+    .container .complete {
+        border-radius: 0 20px 20px 80px;
+        padding: 40px 40px 110px;
+    }
+
+    .container .complete>p {
+        margin-top: 15px;
+    }
+
+    .container .complete .results p:nth-child(2) {
+        font-size: 64px;
+        padding-bottom: 35px;
+    }
+
+    .container .complete .results p:nth-child(3) {
+        margin-top: 35px;
+    }
+
+    .container .complete .results {
+        margin-top: 35px;
+        padding: 30px;
+    }
+}
