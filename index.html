@@ -26,7 +26,7 @@
         <label for="number">Mortgage Amount</label>
         <div class="input js-inp">
           <p class="text-inp js-text-inp">£</p>
-          <input class="input-text js-input js-amount" step="1000" type="number" id="amount">
+          <input class="input-text js-input js-amount" step="1000" min="0" type="number" id="amount">
         </div>
         <p class="required js-error">This field is required</p>
       </div>
@@ -35,7 +35,7 @@
         <div class="term inp">
           <label for="term">Mortgage Term</label>
           <div class="input js-inp">
-            <input class="input-text js-input js-term" type="number" id="term">
+            <input class="input-text js-input js-term" min="0" type="number" id="term">
             <p class="text-inp js-text-inp">years</p>
           </div>
           <p class="required js-error">This field is required</p>
